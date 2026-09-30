@@ -255,24 +255,6 @@ Software Architecture
 
 Some of the areas I'm interested in:
 
-```text
-                   Client
-                     │
-                     ▼
-                HTTP / REST
-                     │
-                     ▼
-                API Server
-                /    |    \
-               /     |     \
-              ▼      ▼      ▼
-           Cache   Database  Queue
-              │       │
-              └───────┴────────┐
-                               ▼
-                       External Services
-```
-
 * REST API design
 * Database modelling
 * Database indexing
@@ -296,13 +278,5 @@ Some of the areas I'm interested in:
 
 ---
 
-
-
-
-<br>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,100:2563EB&height=100&section=footer" />
 
 </div>
