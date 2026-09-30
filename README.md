@@ -25,11 +25,11 @@
 
 I'm an Information Science Engineering student at **UVCE, Bangalore**, interested in software engineering, backend systems, and problem solving.
 
-I enjoy building applications from the API and database layer upward, and I'm particularly interested in understanding how software works beyond the surface level — networking, databases, concurrency, caching, and system architecture.
+I enjoy building applications from the API and database layer upward, with particular interest in backend architecture, databases, networking, and system design.
 
 ---
 
-## Technologies
+# Technologies
 
 ### Languages
 
@@ -48,36 +48,71 @@ I enjoy building applications from the API and database layer upward, and I'm pa
 ### Frontend
 
 <p>
-<img src="https://skillicons.dev/icons?i=react,tailwind,vite" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite" />
 </p>
 
-`HTML` · `CSS` · `JavaScript` · `React` · `Tailwind CSS` · `Vite`
+`HTML` · `CSS` · `JavaScript` · `React` · `Next.js` · `TypeScript` · `Tailwind CSS` · `Vite`
 
 ### Databases
 
 <p>
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,redis" />
+<img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis" />
 </p>
 
-`MySQL` · `MongoDB` · `MongoDB Atlas` · `Redis`
+`MySQL` · `PostgreSQL` · `MongoDB` · `MongoDB Atlas` · `Redis` · `pgvector`
 
-### Tools
+### Tools & Infrastructure
 
 <p>
 <img src="https://skillicons.dev/icons?i=git,github,docker,maven,npm,postman,idea,vscode" />
 </p>
 
-`Git` · `GitHub` · `Docker` · `Maven` · `npm` · `Postman` · `IntelliJ IDEA` · `VS Code`
+`Git` · `GitHub` · `Docker` · `Docker Compose` · `Maven` · `npm` · `Postman` · `IntelliJ IDEA` · `VS Code`
+
+### AI / Engineering
+
+`Spring AI` · `RAG` · `Vector Search` · `REST APIs` · `JPA` · `Swagger / OpenAPI`
 
 ---
 
 # Projects
 
-## MiniRedis
+## 🔍 CodeLens
 
-A Redis-inspired in-memory key-value store implemented in Java.
+### RAG-Powered GitHub Codebase Assistant
 
-**Highlights**
+CodeLens connects to GitHub repositories, indexes their code, and allows developers to explore and query their codebase using natural-language questions.
+
+**Features**
+
+* GitHub authentication
+* Repository synchronization
+* Codebase indexing
+* Indexing status tracking
+* Retry workflows
+* Repository-grounded AI chat
+* Streaming responses
+* Source citations
+* Vector-based code search
+* Persistent repository and chat data
+
+**Tech**
+
+`Next.js` `React` `TypeScript` `Tailwind CSS` `TanStack Query`
+
+`Java 21` `Spring Boot` `Spring AI` `PostgreSQL` `pgvector`
+
+`Maven` `Docker Compose`
+
+---
+
+## 🧠 MiniRedis
+
+### Redis-inspired in-memory key-value store implemented in Java.
+
+A backend-oriented project exploring networking, protocols, in-memory data structures, expiration, eviction, and persistence.
+
+**Features**
 
 * TCP server architecture
 * RESP-style protocol parsing
@@ -88,31 +123,70 @@ A Redis-inspired in-memory key-value store implemented in Java.
 * Maven-based project structure
 * Automated tests
 
-**Tech:** `Java` `Maven` `TCP` `Networking` `Data Structures`
+**Tech**
+
+`Java` `Maven` `TCP` `Networking` `Data Structures`
 
 ---
 
-## Banking System Backend
+## 🔔 Notification Server
 
-A backend application focused on banking operations and API-driven application design.
+### Extensible notification service built with Spring Boot.
 
-**Highlights**
+A backend service designed to integrate with multiple notification providers while keeping the core notification workflow independent of individual providers.
 
-* REST API architecture
-* User and account management
-* Database persistence
-* Transaction workflows
-* MongoDB data modelling
-* Mongoose
-* Backend testing
+**Features**
 
-**Tech:** `Node.js` `Express.js` `MongoDB` `Mongoose` `REST APIs`
+* REST APIs for sending notifications
+* Notification scheduling
+* SMS provider
+* WhatsApp provider
+* Slack provider
+* Retry mechanism
+* Maximum retry handling
+* Failed notification state
+* Input validation
+* Centralized error handling
+* Unit and integration tests
+* Swagger / OpenAPI documentation
+
+**Architecture**
+
+```text
+                    REST API
+                       │
+                       ▼
+              Notification Service
+                       │
+                       ▼
+               Sender Registry
+                  /    |    \
+                 /     |     \
+                ▼      ▼      ▼
+              SMS   WhatsApp  Slack
+                \      |      /
+                 \     |     /
+                  ▼    ▼    ▼
+                External Providers
+```
+
+The notification provider layer uses separate sender implementations, allowing additional providers to be introduced without rewriting the core notification workflow.
+
+**Tech**
+
+`Java` `Spring Boot` `Spring Data JPA` `H2`
+
+`REST APIs` `Maven` `Swagger/OpenAPI`
+
+`SOLID` `OOP` `Strategy Pattern` `Dependency Injection`
 
 ---
 
-## MediLink
+## 🏥 MediLink
 
-A MERN-based platform for coordinating rural healthcare camps.
+### MERN-based rural healthcare camp coordination platform.
+
+A platform designed to coordinate healthcare camps and streamline patient, doctor, and medicine workflows.
 
 **Features**
 
@@ -122,23 +196,27 @@ A MERN-based platform for coordinating rural healthcare camps.
 * Camp coordination
 * Analytics dashboard
 
-**Tech:** `MongoDB` `Express.js` `React` `Node.js` `Vite`
+**Tech**
+
+`MongoDB` `Express.js` `React` `Node.js` `Vite`
 
 ---
 
-## AgriMitra
+## 🌾 AgriMitra
 
-A full-stack agricultural platform developed as a hackathon project.
+### Full-stack agricultural platform developed as a hackathon project.
 
 **Role:** Frontend Development
 
-**Tech:** `React` `JavaScript` `HTML` `CSS`
+**Tech**
+
+`React` `JavaScript` `HTML` `CSS`
 
 ---
 
-## Smart Crop Recommendation
+## 🌱 Smart Crop Recommendation
 
-A machine-learning project for crop recommendation using agricultural datasets.
+Machine-learning project for crop recommendation using agricultural datasets.
 
 **Explored**
 
@@ -148,7 +226,9 @@ A machine-learning project for crop recommendation using agricultural datasets.
 * Naive Bayes
 * Logistic Regression
 
-**Tech:** `Python` `Machine Learning` `Kaggle`
+**Tech**
+
+`Python` `Machine Learning` `Kaggle`
 
 ---
 
@@ -163,52 +243,56 @@ Database Management Systems
 Operating Systems
 Computer Networks
 SQL
-Computer Architecture
 Backend Development
 API Design
 System Design
+Software Architecture
 ```
 
 ---
 
-# Backend Interests
+# Backend & System Design
+
+Some of the areas I'm interested in:
 
 ```text
-                Client
-                  │
-                  ▼
-             HTTP / REST
-                  │
-                  ▼
-             API Server
-             /    |    \
-            /     |     \
-           ▼      ▼      ▼
-        Cache   Database  Queue
-           │      │
-           └──────┴──────┐
-                         ▼
-                  External Services
+                   Client
+                     │
+                     ▼
+                HTTP / REST
+                     │
+                     ▼
+                API Server
+                /    |    \
+               /     |     \
+              ▼      ▼      ▼
+           Cache   Database  Queue
+              │       │
+              └───────┴────────┐
+                               ▼
+                       External Services
 ```
 
-Areas of interest include:
-
 * REST API design
-* Database design and indexing
+* Database modelling
+* Database indexing
 * Caching
-* Authentication and authorization
+* Authentication & authorization
 * Networking
 * Concurrency
 * Message queues
-* Distributed systems
+* Background processing
+* Fault handling
 * Low-level design
-* System architecture
+* Distributed systems
 
 ---
 
 # Problem Solving
 
-I use competitive programming and interview-style problems to strengthen my understanding of algorithms and data structures.
+I use coding platforms to practice data structures, algorithms, SQL, and interview-style problems.
+
+<div align="center">
 
 <a href="https://leetcode.com/u/anirudh_9039/">
 <img src="https://img.shields.io/badge/LeetCode-anirudh__9039-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
@@ -218,9 +302,11 @@ I use competitive programming and interview-style problems to strengthen my unde
 <img src="https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/>
 </a>
 
+</div>
+
 ---
 
-# GitHub
+# GitHub Statistics
 
 <div align="center">
 
