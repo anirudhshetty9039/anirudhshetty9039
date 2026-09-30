@@ -288,71 +288,16 @@ Some of the areas I'm interested in:
 
 ---
 
-# Problem Solving
 
-I use coding platforms to practice data structures, algorithms, SQL, and interview-style problems.
-
-<div align="center">
-
-<a href="https://leetcode.com/u/anirudh_9039/">
-<img src="https://img.shields.io/badge/LeetCode-anirudh__9039-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-</a>
-
-<a href="https://www.geeksforgeeks.org/">
-<img src="https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/>
-</a>
-
-</div>
 
 ---
 
-# GitHub Statistics
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=anirudhshetty9039&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anirudhshetty9039&layout=compact&hide_border=true&theme=transparent&langs_count=8" />
-
-</div>
-
-<br>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=anirudhshetty9039&hide_border=true&theme=transparent" />
-
-</div>
 
 ---
 
-# Contribution Graph
 
-<div align="center">
 
-<img src="https://raw.githubusercontent.com/anirudhshetty9039/anirudhshetty9039/output/github-contribution-grid-snake.svg" />
-
-</div>
-
----
-
-# Connect
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/anirudh-shetty-09b670297/">
-<img src="https://img.shields.io/badge/LinkedIn-Anirudh%20Shetty-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://leetcode.com/u/anirudh_9039/">
-<img src="https://img.shields.io/badge/LeetCode-anirudh__9039-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-</a>
-
-<a href="mailto:anirudhshetty0805@gmail.com">
-<img src="https://img.shields.io/badge/Email-anirudhshetty0805%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-</div>
 
 <br>
 
